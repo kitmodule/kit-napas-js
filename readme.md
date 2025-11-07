@@ -94,7 +94,7 @@ Create a new NAPAS QR generator instance.
 ## 🧪 Example Output
 
 ```js
-const payload = kitmodule.napas("970415", "1234567890")
+const payload = new KitNapas("970415", "1234567890")
   .amount("50000")
   .info("Nap tien")
   .payload();
@@ -115,30 +115,40 @@ Easily display the generated NAPAS payload as a scannable QR code using **QRCode
 
 ```html
 <!-- Include both libraries -->
-<script src="https://unpkg.com/@kitmodule/kitnapas/dist/kitnapas.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello, NAPAS QR!</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/@kitmodule/kitnapas/dist/kitnapas.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+</head>
+<body>
+  <h1>NAPAS QR Code Demo</h1>
+  <div id="qrcode"></div>
 
-<div id="qrcode"></div>
+  <script>
+    // Generate NAPAS payload
+    const payload = new KitNapas("970436", "0651000837537")
+      .amount("100000")
+      .info("Donate KitNapas to Quoc")
+      .payload();
 
-<script>
-  // Generate NAPAS payload
-  const payload = kitmodule.napas("970415", "1234567890")
-    .amount("100000")
-    .info("Nap tien cho Quoc")
-    .payload();
+    console.log("Generated payload:", payload);
 
-  console.log(payload);
-
-  // Render QR code on the page
-  new QRCode(document.getElementById("qrcode"), {
-    text: payload,
-    width: 200,
-    height: 200,
-    colorDark: "#000000",
-    colorLight: "#ffffff",
-    correctLevel: QRCode.CorrectLevel.M
-  });
-</script>
+    // Render QR code on the page
+    new QRCode(document.getElementById("qrcode"), {
+      text: payload,
+      width: 200,
+      height: 200,
+      colorDark: "#000000",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.M
+    });
+  </script>
+</body>
+</html>
 ```
 
 This will display a valid **NAPAS 247 EMV-QR** image ready for banking apps to scan.
