@@ -4,7 +4,6 @@
 [![npm version](https://img.shields.io/npm/v/@kitmodule/kitnapas.svg)](https://www.npmjs.com/package/@kitmodule/kitnapas)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
----
 
 ## ✨ Features
 
@@ -14,7 +13,6 @@
 - 🧱 Fluent, chainable API.
 - 🔒 Built-in CRC16 checksum.
 
----
 
 ## 🚀 Installation
 
@@ -30,7 +28,6 @@ npm install @kitmodule/kitnapas
 <script src="https://unpkg.com/@kitmodule/kitnapas/dist/kitnapas.min.js"></script>
 ```
 
----
 
 ## 💡 Usage
 
@@ -61,7 +58,6 @@ const qr = new KitNapas("970415", "1234567890")
 console.log(qr);
 ```
 
----
 
 ## 🧩 API Reference
 
@@ -74,7 +70,6 @@ Create a new NAPAS QR generator instance.
 | `bin`           | `string` | Bank BIN code (Acquirer ID) |
 | `accountNumber` | `string` | Account or consumer ID      |
 
----
 
 ### Chainable methods
 
@@ -86,7 +81,6 @@ Create a new NAPAS QR generator instance.
 | `.dynamic()`     | Switch to **dynamic QR** (`PointOfInitiationMethod = 12`) | `.dynamic()`        |
 | `.payload()`     | Generate the final **EMV-QR string**                      | `.payload()`        |
 
----
 
 ### Exports Overview
 
@@ -96,7 +90,6 @@ Create a new NAPAS QR generator instance.
 | `kitmodule.napas()` | `function` | Factory shortcut returning new instance |
 | `KitNapas` (global) | `class`    | Global reference for browsers           |
 
----
 
 ## 🧪 Example Output
 
@@ -115,7 +108,6 @@ Output (example):
 00020101021138560010A000000727011600069704150112345678900203QRIBFTTA53037045406500005802VN621008086E6170206304A13B
 ```
 
----
 
 ## 🧩 Integration with [QRCode.js](https://davidshimjs.github.io/qrcodejs)
 
@@ -151,32 +143,12 @@ Easily display the generated NAPAS payload as a scannable QR code using **QRCode
 
 This will display a valid **NAPAS 247 EMV-QR** image ready for banking apps to scan.
 
----
-
-## 🛠 Development
-
-Build the library:
-
-```bash
-npm run build
-```
-
-Output files:
-
-```
-dist/
-├── kitnapas.js
-└── kitnapas.min.js
-```
-
----
 
 ## 🤝 Contributing
 
 Contributions are welcome!
 Open an issue or submit a pull request at [github.com/kitmodule/kitnapas](https://github.com/kitmodule/kitnapas).
 
----
 
 ## ☕ Support the Author
 
@@ -186,7 +158,6 @@ Open an issue or submit a pull request at [github.com/kitmodule/kitnapas](https:
 [![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge\&logo=patreon\&logoColor=white)](https://patreon.com/huynhnhanquoc)
 [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge\&logo=paypal\&logoColor=white)](https://paypal.me/huynhnhanquoc)
 
----
 
 ## 🧾 License
 
