@@ -1,0 +1,39 @@
+{
+    "name": "@kitmodule/kitnapas",
+    "version": "0.0.1",
+    "description": "Generate NAPAS EMV-QR payloads in vanilla JavaScript — lightweight, chainable, and dependency-free.",
+    "main": "dist/kitnapas.js",
+    "unpkg": "dist/kitnapas.min.js",
+    "jsdelivr": "dist/kitnapas.min.js",
+    "homepage": "https://github.com/kitmodule/kitnapas",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kitmodule/kitnapas.git"
+    },
+    "bugs": {
+        "url": "https://github.com/kitmodule/kitnapas/issues"
+    },
+    "keywords": [
+        "napas",
+        "emv",
+        "qr",
+        "emvqr",
+        "kitmodule",
+        "kitnapas",
+        "banking",
+        "qr-code",
+        "payment",
+        "napas247",
+        "vietnam"
+    ],
+    "author": {
+        "name": "Huỳnh Nhân Quốc",
+        "url": "https://github.com/huynhnhanquoc"
+    },
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "build": "echo 'build step here'",
+        "prepublishOnly": "npm run build"
+    }
+}
