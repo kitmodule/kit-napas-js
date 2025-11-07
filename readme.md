@@ -1,6 +1,8 @@
 # 💳 KitNapas JS by Kitmodule
 **Generate NAPAS EMV-QR payloads in vanilla JavaScript — lightweight, chainable, and dependency-free.**
 
+[🇬🇧 English](README-en.md) | [🇻🇳 Tiếng Việt](README-vi.md)
+
 [![npm version](https://img.shields.io/npm/v/@kitmodule/kitnapas.svg)](https://www.npmjs.com/package/@kitmodule/kitnapas)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
@@ -36,7 +38,7 @@ npm install @kitmodule/kitnapas
 ```html
 <script src="https://unpkg.com/@kitmodule/kitnapas/dist/kitnapas.min.js"></script>
 <script>
-const qr = new KitNapas("970415", "1234567890")
+const qr = new KitNapas("970436", "0651000837537")
   .amount("50000")
   .info("Nap tien NAPAS 247")
   .payload();
@@ -50,9 +52,9 @@ console.log(qr);
 ```js
 import { KitNapas } from "@kitmodule/kitnapas";
 
-const qr = new KitNapas("970415", "1234567890")
+const qr = new KitNapas("970436", "0651000837537")
   .amount("50000")
-  .info("Transfer to Huynh Nhan Quoc")
+  .info("Transfer to auth")
   .payload();
 
 console.log(qr);
@@ -94,9 +96,9 @@ Create a new NAPAS QR generator instance.
 ## 🧪 Example Output
 
 ```js
-const payload = new KitNapas("970415", "1234567890")
+const payload = new KitNapas("970436", "0651000837537")
   .amount("50000")
-  .info("Nap tien")
+  .info("Donate auth")
   .payload();
 
 console.log(payload);
@@ -132,7 +134,7 @@ Easily display the generated NAPAS payload as a scannable QR code using **QRCode
     // Generate NAPAS payload
     const payload = new KitNapas("970436", "0651000837537")
       .amount("100000")
-      .info("Donate KitNapas to Quoc")
+      .info("Donate auth KitNapas")
       .payload();
 
     console.log("Generated payload:", payload);
