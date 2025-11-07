@@ -1,7 +1,7 @@
 # 💳 KitNapas JS từ Kitmodule
 **Tạo payload NAPAS EMV-QR bằng JavaScript thuần — nhẹ, chuỗi phương thức linh hoạt và không phụ thuộc thư viện.**
 
-[🇬🇧 English](readme.md) | [🇻🇳 Tiếng Việt](readme-vi.md)
+[English](readme.md) - [Tiếng Việt](readme-vi.md)
 
 
 [![npm version](https://img.shields.io/npm/v/@kitmodule/kitnapas.svg)](https://www.npmjs.com/package/@kitmodule/kitnapas)
